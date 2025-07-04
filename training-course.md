@@ -1,7 +1,5 @@
 Completando el training course de Azure (AI-900). Voy a ir bajando notas y recursos en este repo.
 
-### Unidad 01
-
 Los primeros temas que se ven son muy generales:
 
 - AI generativa: vemos cómo funcionan los LLM para devolver un resultado a partir de un prompt.
@@ -51,3 +49,44 @@ Because machine learning is based on mathematics and statistics, it's common to 
 ![](./img/img-003.png)
 
 - In the ice cream sales scenario, our goal is to train a model that can predict the number of ice cream sales based on the weather. The weather measurements for the day (temperature, rainfall, windspeed, and so on) would be the _features_ (_**x**_), and the number of ice creams sold on each day would be the _label_ (_**y**_).
+
+### Regression evaluation metrics
+
+- Mean Absolute Error (MAE)
+- Mean Squared Error (MSE)
+- Root Mean Squared Error (RMSE)
+- Coefficient of determination (R2)
+
+### Binary classification
+
+_Binary classification_ algorithms are used to train a model that predicts one of two possible labels for a single class. Essentially, predicting _**true**_ or _**false**_. In most real scenarios, the data observations used to train and validate the model consist of multiple feature (_**x**_) values and a _**y**_ value that is either **1** or **0**.
+
+![[./img/img-005.png]]
+
+### Binary classification evaluation metrics
+
+- Accuaracy
+- Recall
+- Precision
+- F1-score
+- Area Under the Curve (AUC)
+
+## Multiclass classification
+
+_Multiclass classification_ is used to predict to which of multiple possible classes an observation belongs. As a supervised machine learning technique, it follows the same iterative _train, validate, and evaluate_ process as regression and binary classification in which a subset of the training data is held back to validate the trained model.
+
+- One-vs-Rest (OvR) algorithms
+- Multinomial algorithms
+
+## Clustering
+
+_Clustering_ is a form of unsupervised machine learning in which observations are grouped into clusters based on similarities in their data values, or features. This kind of machine learning is considered unsupervised because it doesn't make use of previously known label values to train a model. In a clustering model, the label is the cluster to which the observation is assigned, based only on its features.
+
+![[./img/img-006.gif]]
+
+## Deep learning
+
+_Deep learning_ is an advanced form of machine learning that tries to emulate the way the human brain learns. The key to deep learning is the creation of an artificial _neural network_ that simulates electrochemical activity in biological neurons by using mathematical functions, as shown here.
+
+![[./img/img-007.png]]
+
